@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyPulse Weather</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1 class="logo">
+        <i class="fa-solid fa-cloud-sun"></i>
+        SkyPulse
+    </h1>
+
+    <div class="search-box">
+        <input type="text"
+        id="cityInput"
+        placeholder="Search city...">
+
+        <button onclick="getWeather()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div id="weatherCard" class="weather-card">
+
+        <div class="main-weather">
+
+            <div>
+                <h2 id="city">Salem</h2>
+                <p id="condition">Sunny</p>
+            </div>
+
+            <img id="icon"
+            src=""
+            alt="weather">
+
+        </div>
+
+        <h1 id="temp">30°C</h1>
+
+        <div class="stats">
+
+            <div class="stat">
+                <i class="fa-solid fa-droplet"></i>
+                <span id="humidity">60%</span>
+            </div>
+
+            <div class="stat">
+                <i class="fa-solid fa-wind"></i>
+                <span id="wind">15 km/h</span>
+            </div>
+
+            <div class="stat">
+                <i class="fa-solid fa-eye"></i>
+                <span id="visibility">10 km</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
